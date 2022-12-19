@@ -1,0 +1,363 @@
+/* Custom Fonts */
+@font-face {
+  font-family: "Italian Plate No4";
+  src: url("fonts/ItalianPlateNo4Display-Medium.otf");
+  src: url("fonts/PT-Sans.eot?#iefix") format("embedded-opentype");
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Italian Plate No4", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-family: "Italian Plate No4";
+  font-style: normal;
+  font-weight: 600;
+  font-size: normal;
+  line-height: 1.5;
+  /* identical to box height, or 86% */
+  text-align: center;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #906f57;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-image: url(../images/vivian-side-cake.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 20% 20%;
+  background-size: cover;
+  color: white;
+}
+nav {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav > a {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+  margin-bottom: 50px;
+}
+.logo > img {
+  width: 20%;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* Vivian Story Section */
+#about-vivian {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+
+.text-img-vivian {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5em;
+  margin-bottom: 10%;
+}
+.text-img-vivian > img {
+  width: 30%;
+  height: auto;
+}
+.text-img-vivian > p {
+  width: 20em;
+  font-family: "Italian Plate No2";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+}
+h2 {
+  font-family: "Italian Plate No4";
+  font-style: normal;
+  font-weight: 600;
+  font-size: normal;
+  line-height: 1.5;
+  /* identical to box height, or 86% */
+  text-align: center;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #906f57;
+}
+
+/* Displaying the vivian video */
+.showcase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+  background-color: #906f57;
+}
+
+/* Slideshow Styles */
+.cycle-slideshow {
+}
+
+.slide {
+  width: 100%;
+  position: relative;
+  background-image: url(/images/food-1.jpg);
+  background-size: contain;
+}
+
+.slide img {
+  display: block;
+}
+
+.slide-text h3 {
+  margin: 0;
+}
+
+.cycle-pager {
+  position: absolute;
+  top: 20px;
+  z-index: 1003;
+  width: 100%;
+  text-align: center;
+}
+
+.cycle-pager span {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.cycle-pager .cycle-pager-active {
+  background-color: #000;
+}
+
+/* Menu from wordpress*/
+.fetching-menu {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 1rem;
+  margin-bottom: 90px;
+}
+.course {
+  border-radius: 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.course h2 {
+  margin-bottom: 0.5em;
+}
+.course p {
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+/* End Menu Section */
+
+/*Review Section */
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: auto;
+  column-gap: 5em;
+  margin-bottom: 4em;
+}
+
+.img-bio {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-bio > img {
+  width: 175.96px;
+  height: 175.96px;
+  border-radius: 131.14px;
+}
+.img-bio > p {
+  font-style: normal;
+  font-weight: 300;
+}
+.client > p {
+  font-family: "Italian Plate No4 Expanded";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #000000;
+}
+
+/*Contact Form */
+#contact-form {
+  display: flex;
+  flex-direction: row;
+  column-gap: 4em;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 5em;
+}
+#contact-form > img {
+  width: 40%;
+  height: auto;
+}
+.submission-form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 2em;
+  padding: 2rem;
+  color: #906f57;
+}
+
+label {
+  display: block;
+}
+input,
+textarea {
+  border: 0;
+  border-bottom: 1px solid #906f57;
+  display: block;
+  width: 100%;
+  color: #906f57;
+
+  padding: 1rem;
+}
+#sendBtn {
+  border: 0;
+  color: #fff;
+  background-color: #906f57;
+  filter: drop-shadow(0px 12.2034px 12.2034px rgba(0, 0, 0, 0.25));
+}
+footer {
+  margin-bottom: 2%;
+}
+.footer-section {
+  margin-top: 2em;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid black;
+}
+
+.middle-section {
+  width: 10em;
+}
+.middle-section > img {
+  width: 100%;
+}
+.right-section {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10em;
+}
+
+.first-line {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+}
+.second-line {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+}
+
+.first-line > a {
+  text-decoration: none;
+  font-family: "Italian Plate No4";
+  font-style: normal;
+  font-weight: 500;
+  color: black;
+}
+.Second-line > a {
+  text-decoration: none;
+  font-family: "Italian Plate No4";
+  font-style: normal;
+  font-weight: 500;
+  color: black;
+}
+
+.under-footer {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.under-footer > img {
+  width: 5%;
+}
+.SoMe-icons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1em;
+  align-items: flex-end;
+}
+.SoMe-icons > i:hover {
+  filter: drop-shadow(0px 12.2034px 12.2034px rgb(160, 6, 6));
+}
+/*----------Responsive part -------*/
+@media only screen and (max-width: 600px) {
+  header {
+    background-image: url(../images/vivian-side-cake.png);
+
+    color: white;
+  }
+  nav {
+    display: none;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+  }
+}
