@@ -18,20 +18,20 @@
       <nav>
         <a href="#about-vivian">About</a>
         <a href="#cycle-slideshow">Gallery</a>
-        <a href="#menu-section">Menus</a>
+        <a href="#fetching-menu">Menus</a>
+        <a href="#reviews">Testimonials</a>
         <a href="#contact-form">Contact</a>
       </nav>
+
       <div class="logo">
         <a href="index.html">
           <img src="images/Logo-transparent.svg" alt="logo" />
         </a>
       </div>
     </header>
-
     <!-- container -->
     <div class="container">
       <!--First section describing vivian-->
-
       <div id="about-vivian">
         <h2>ABout Vi van</h2>
         <div class="text-img-vivian">
@@ -46,60 +46,57 @@
           </p>
         </div>
       </div>
-
       <!-- End First section describing vivian-->
-
-      <!-- Second  section using slideshow -->
 
       <h2>Gallery</h2>
       <!-- row -->
-      <div class="row">
-        <!-- col -->
-        <div class="col col-md-8 push-down-sm">
-          <div
-            class="cycle-slideshow"
-            data-cycle-slides=".slide"
-            data-cycle-pause-on-hover="true"
-          >
-            <span class="cycle-pager"></span>
+      <div id="cycle-slideshow">
+        <div class="row">
+          <!-- col -->
+          <div class="col col-md-8 push-down-sm">
+            <div
+              class="cycle-slideshow"
+              data-cycle-slides=".slide"
+              data-cycle-pause-on-hover="true"
+            >
+              <span class="cycle-pager"></span>
 
-            <div class="slide">
-              <img src="images/food-1.png" alt="dish-1" />
-            </div>
+              <div class="slide">
+                <img src="images/food-1.png" alt="dish-1" />
+              </div>
 
-            <div class="slide">
-              <img src="images/food-2.jpg" alt="dish -2" />
-            </div>
+              <div class="slide">
+                <img src="images/food-2.jpg" alt="dish -2" />
+              </div>
 
-            <div class="slide">
-              <img src="images/food-3.jpg" alt="dish-3" />
-            </div>
-            <div class="slide">
-              <img src="images/food-4.jpg" alt="dish-4" />
+              <div class="slide">
+                <img src="images/food-3.jpg" alt="dish-3" />
+              </div>
+              <div class="slide">
+                <img src="images/food-4.jpg" alt="dish-4" />
+              </div>
             </div>
           </div>
         </div>
       </div>
-
       <!-- End   Second  section using slideshow -->
 
       <!--course  from Wordpress-->
       <h2>MENU</h2>
-      <div class="fetching-menu">
+      <div id="fetching-menu">
         <template>
           <article class="course">
             <img src="" alt="" />
-            <h2></h2>
-            <p></p>
+            <h2 class="title"></h2>
+            <p class="description"></p>
           </article>
         </template>
       </div>
-
       <!-- End course  from Wordpress-->
 
       <!--Review section-->
       <h2>Reviews</h2>
-      <div class="reviews">
+      <div id="reviews">
         <div class="client">
           <div class="img-bio">
             <img src="images/client-1.png" alt="image of the client" />
@@ -145,6 +142,7 @@
         </div>
       </div>
       <h2>Contact</h2>
+      <!--Contact Form-->
       <div id="contact-form">
         <img src="images/vivian-smile.png" alt="vivan smile" />
         <form class="submission-form">
@@ -169,7 +167,6 @@
         </form>
       </div>
     </div>
-
     <footer>
       <div class="footer-section">
         <div class="left-section">

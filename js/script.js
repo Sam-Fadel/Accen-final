@@ -17,11 +17,11 @@ function showcourses(course) {
   const template = document.querySelector("template").content;
   const copy = template.cloneNode(true);
 
-  copy.querySelector("h2").textContent = course.title.rendered;
-  copy.querySelector("p").textContent = course.content.rendered;
+  copy.querySelector("h2.title").textContent = course.dish;
+  copy.querySelector("p.description").textContent = course.description;
 
   copy.querySelector("img").src =
     course._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
 
-  document.querySelector(".fetching-menu").appendChild(copy);
+  document.querySelector("#fetching-menu").appendChild(copy);
 }

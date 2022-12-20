@@ -4,11 +4,9 @@
   src: url("fonts/ItalianPlateNo4Display-Medium.otf");
   src: url("fonts/PT-Sans.eot?#iefix") format("embedded-opentype");
 }
-
 * {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: "Italian Plate No4", sans-serif;
   margin: 0;
@@ -26,16 +24,13 @@ h2 {
   text-transform: uppercase;
   color: #906f57;
 }
-
 img {
   max-width: 100%;
   height: auto;
 }
-
 a {
   text-decoration: none;
 }
-
 header {
   background-image: url(../images/vivian-side-cake.png);
   height: 100vh;
@@ -53,12 +48,25 @@ nav {
   justify-content: space-between;
 }
 nav > a {
-  margin-top: 20px;
+  margin-top: 10%;
   margin-bottom: 40px;
   text-align: center;
   text-decoration: none;
   color: white;
+  font-weight: 400;
+  font-size: 1.2em;
 }
+nav > a:hover {
+  margin-top: 10%;
+  margin-bottom: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(238, 255, 0);
+  font-weight: 400;
+  font-size: 1.2em;
+}
+/*------- the Mobile view for the navigation bar------*/
+
 .logo {
   display: flex;
   justify-content: center;
@@ -66,8 +74,8 @@ nav > a {
   margin-top: 12rem;
   margin-bottom: 50px;
 }
-.logo > img {
-  width: 20%;
+.logo > a {
+  width: 10%;
 }
 .container {
   max-width: 960px;
@@ -79,7 +87,7 @@ nav > a {
   margin-top: 5%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .text-img-vivian {
@@ -114,36 +122,20 @@ h2 {
   color: #906f57;
 }
 
-/* Displaying the vivian video */
-.showcase {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  padding: 0 20px;
-  background-color: #906f57;
-}
-
 /* Slideshow Styles */
-.cycle-slideshow {
-}
-
 .slide {
   width: 100%;
   position: relative;
   background-image: url(/images/food-1.jpg);
   background-size: contain;
+  margin-bottom: 5%;
 }
-
 .slide img {
   display: block;
 }
-
 .slide-text h3 {
   margin: 0;
 }
-
 .cycle-pager {
   position: absolute;
   top: 20px;
@@ -151,7 +143,6 @@ h2 {
   width: 100%;
   text-align: center;
 }
-
 .cycle-pager span {
   text-indent: -9999px;
   display: inline-block;
@@ -162,16 +153,15 @@ h2 {
   margin: 0 4px;
   cursor: pointer;
 }
-
 .cycle-pager .cycle-pager-active {
   background-color: #000;
 }
-
 /* Menu from wordpress*/
-.fetching-menu {
+#fetching-menu {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
   gap: 0 1rem;
   margin-bottom: 90px;
 }
@@ -184,22 +174,21 @@ h2 {
 }
 .course p {
   margin-bottom: 20px;
+  padding: 20px;
+  line-height: 1.4;
 }
-
 img {
   max-width: 100%;
 }
 /* End Menu Section */
-
 /*Review Section */
-.reviews {
+#reviews {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row: auto;
   column-gap: 5em;
   margin-bottom: 4em;
 }
-
 .img-bio {
   margin: 0;
   display: flex;
@@ -226,7 +215,6 @@ img {
 
   color: #000000;
 }
-
 /*Contact Form */
 #contact-form {
   display: flex;
@@ -234,7 +222,6 @@ img {
   column-gap: 4em;
   align-items: center;
   justify-content: center;
-
   margin-bottom: 5em;
 }
 #contact-form > img {
@@ -249,7 +236,6 @@ img {
   padding: 2rem;
   color: #906f57;
 }
-
 label {
   display: block;
 }
@@ -283,7 +269,6 @@ footer {
   align-items: flex-start;
   border-bottom: 2px solid black;
 }
-
 .middle-section {
   width: 10em;
 }
@@ -295,16 +280,17 @@ footer {
   flex-direction: row;
   column-gap: 10em;
 }
-
 .first-line {
   display: flex;
   flex-direction: column;
   row-gap: 2em;
+  color: #000000;
 }
 .second-line {
   display: flex;
   flex-direction: column;
   row-gap: 2em;
+  color: #000000;
 }
 
 .first-line > a {
@@ -314,7 +300,7 @@ footer {
   font-weight: 500;
   color: black;
 }
-.Second-line > a {
+.second-line > a {
   text-decoration: none;
   font-family: "Italian Plate No4";
   font-style: normal;
@@ -344,20 +330,3 @@ footer {
   filter: drop-shadow(0px 12.2034px 12.2034px rgb(160, 6, 6));
 }
 /*----------Responsive part -------*/
-@media only screen and (max-width: 600px) {
-  header {
-    background-image: url(../images/vivian-side-cake.png);
-
-    color: white;
-  }
-  nav {
-    display: none;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: aqua;
-  }
-}
