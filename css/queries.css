@@ -1,0 +1,153 @@
+/*rem and em do NOT depend on html fot-size in media queries!
+Instead, 1rem = 1em = 16px */
+
+/********************/
+/* BELOW 1344px (Smaller desktop) */
+/******************/
+
+@media (max-width: 84em) {
+  header {
+    background-image: url(../images/vivian-side-cake.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: 20% 20%;
+    background-size: cover;
+    color: white;
+  }
+}
+/********************/
+/* BELOW 944px (Landscape tablets) */
+/******************/
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+  h2 {
+    margin-top: 2em;
+  }
+  .main-nav-list {
+    color: #ffffff;
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    /* Hide Navigation */
+
+    /*make it unaccesiible to mouse and keyboard*/
+
+    /* hide it from screen readers */
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    row-gap: 1em;
+    margin-left: 5em;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    margin-top: 5em;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  }
+  .logo > a {
+    width: 20%;
+  }
+  #about-vivian {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+  .text-img-vivian {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5em;
+    row-gap: 5em;
+    margin-bottom: 5%;
+  }
+  #fetching-menu {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3em 2rem;
+  }
+  .course {
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .course > img {
+    max-width: 100%;
+  }
+  .course p {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    line-height: 1.4;
+    font-size: medium;
+  }
+  .img-bio > img {
+    width: 10.998em;
+    height: 10.998em;
+    border-radius: 8.196em;
+  }
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    column-gap: 4em;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5em;
+  }
+  #reviews {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: auto;
+    row-gap: 5em;
+    margin-bottom: 4em;
+    margin-top: 5em;
+  }
+  .footer-section {
+    display: none;
+  }
+  .img-bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+  }
+  .client > p {
+    font-family: "Italian Plate No4 Expanded";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 2em;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #000000;
+  }
+}

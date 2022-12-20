@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <title>Acen</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/screen.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <script
       src="https://kit.fontawesome.com/b790dc8a90.js"
       crossorigin="anonymous"
@@ -14,14 +15,17 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="#about-vivian">About</a>
-        <a href="#cycle-slideshow">Gallery</a>
-        <a href="#fetching-menu">Menus</a>
-        <a href="#reviews">Testimonials</a>
-        <a href="#contact-form">Contact</a>
-      </nav>
+    <header class="header">
+      <div class="navigation-desktop-mobile">
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#about-vivian">About</a></li>
+            <li><a class="main-nav-link" href="#fetching-menu">Menus</a></li>
+            <li><a class="main-nav-link" href="#reviews">Testimonials</a></li>
+            <li><a class="main-nav-link" href="#contact-form">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
 
       <div class="logo">
         <a href="index.html">
@@ -33,7 +37,7 @@
     <div class="container">
       <!--First section describing vivian-->
       <div id="about-vivian">
-        <h2>ABout Vi van</h2>
+        <h2>About</h2>
         <div class="text-img-vivian">
           <img src="images/spices-on-top.png" alt="vivian cooking" />
           <p>
@@ -166,43 +170,53 @@
           <input type="button" value="Send" id="sendBtn" />
         </form>
       </div>
+      <footer>
+        <div class="footer-section">
+          <div class="left-section">
+            <strong>ACEN - Fine Dining</strong>
+            <p>Vivian@acent.dk</p>
+            <p>+45 51 10 25 06</p>
+            <p>CVR : 55 12 54 21</p>
+          </div>
+          <div class="middle-section">
+            <img src="images/sml-logo.svg" alt="logo-middle" />
+          </div>
+          <div class="right-section">
+            <div class="first-line">
+              <a href="#">Info</a>
+              <a href="#">Terms</a>
+              <a href="#">Condition</a>
+            </div>
+            <div class="second-line">
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+              <a href="#">Follow Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="under-footer">
+          <img src="images/footer-logo-solo.svg" alt="logo" />
+          <p>
+            &copy; 2022 ACEN - Fine Dining - Salt & Pepper - Final Exam - KEA
+          </p>
+          <div class="SoMe-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </footer>
     </div>
-    <footer>
-      <div class="footer-section">
-        <div class="left-section">
-          <strong>ACEN - Fine Dining</strong>
-          <p>Vivian@acent.dk</p>
-          <p>+45 51 10 25 06</p>
-          <p>CVR : 55 12 54 21</p>
-        </div>
-        <div class="middle-section">
-          <img src="images/sml-logo.svg" alt="logo-middle" />
-        </div>
-        <div class="right-section">
-          <div class="first-line">
-            <a href="#">Info</a>
-            <a href="#">Terms</a>
-            <a href="#">Condition</a>
-          </div>
-          <div class="second-line">
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">Follow Us</a>
-          </div>
-        </div>
-      </div>
-      <div class="under-footer">
-        <img src="images/footer-logo-solo.svg" alt="logo" />
-        <p>&copy; 2022 ACEN - Fine Dining - Salt & Pepper - Final Exam - KEA</p>
-        <div class="SoMe-icons">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-tiktok"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-youtube"></i>
-        </div>
-      </div>
-    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
   <script src="js/script.js"></script>
 </html>

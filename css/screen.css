@@ -4,13 +4,18 @@
   src: url("fonts/ItalianPlateNo4Display-Medium.otf");
   src: url("fonts/PT-Sans.eot?#iefix") format("embedded-opentype");
 }
+
 * {
+  box-sizing: border-box;
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 body {
   font-family: "Italian Plate No4", sans-serif;
-  margin: 0;
-  padding: 0;
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
 }
 h2 {
   font-family: "Italian Plate No4";
@@ -39,8 +44,31 @@ header {
   background-size: cover;
   color: white;
 }
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+  color: #fff;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 5em;
+}
+
+.navigation-desktop-mobile {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
 nav {
-  width: 400px;
+  width: 30em;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -48,17 +76,17 @@ nav {
   justify-content: space-between;
 }
 nav > a {
+  text-align: center;
   margin-top: 10%;
-  margin-bottom: 40px;
   text-align: center;
   text-decoration: none;
   color: white;
   font-weight: 400;
   font-size: 1.2em;
+  margin-top: 5em;
 }
 nav > a:hover {
   margin-top: 10%;
-  margin-bottom: 40px;
   text-align: center;
   text-decoration: none;
   color: rgb(238, 255, 0);
@@ -66,19 +94,37 @@ nav > a:hover {
   font-size: 1.2em;
 }
 /*------- the Mobile view for the navigation bar------*/
-
+.btn-mbile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 2em;
+  color: white;
+  font-size: 1.7em;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+.icon-mobile-nav[name="menu-outline"] {
+  display: ;
+}
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 12rem;
-  margin-bottom: 50px;
+  margin-top: 20rem;
 }
 .logo > a {
   width: 10%;
 }
 .container {
-  max-width: 960px;
+  max-width: 80rem;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -120,6 +166,7 @@ h2 {
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: #906f57;
+  margin-bottom: 2em;
 }
 
 /* Slideshow Styles */
@@ -128,7 +175,7 @@ h2 {
   position: relative;
   background-image: url(/images/food-1.jpg);
   background-size: contain;
-  margin-bottom: 5%;
+  margin-bottom: 5em;
 }
 .slide img {
   display: block;
@@ -138,19 +185,19 @@ h2 {
 }
 .cycle-pager {
   position: absolute;
-  top: 20px;
+  top: 1.25em;
   z-index: 1003;
   width: 100%;
   text-align: center;
 }
 .cycle-pager span {
-  text-indent: -9999px;
+  text-indent: -624.938em;
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 0.625em;
+  height: 0.625em;
   border-radius: 50%;
   background-color: #fff;
-  margin: 0 4px;
+  margin: 0 0.25em;
   cursor: pointer;
 }
 .cycle-pager .cycle-pager-active {
@@ -161,9 +208,8 @@ h2 {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   gap: 0 1rem;
-  margin-bottom: 90px;
+  margin-bottom: 5em;
 }
 .course {
   border-radius: 1rem;
@@ -177,7 +223,7 @@ h2 {
   padding: 20px;
   line-height: 1.4;
 }
-img {
+.course > img {
   max-width: 100%;
 }
 /* End Menu Section */
@@ -196,9 +242,9 @@ img {
   align-items: center;
 }
 .img-bio > img {
-  width: 175.96px;
-  height: 175.96px;
-  border-radius: 131.14px;
+  width: 10.998em;
+  height: 10.998em;
+  border-radius: 8.196em;
 }
 .img-bio > p {
   font-style: normal;
@@ -208,11 +254,10 @@ img {
   font-family: "Italian Plate No4 Expanded";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 1em;
+  line-height: 2em;
   text-align: center;
   letter-spacing: 0.1em;
-
   color: #000000;
 }
 /*Contact Form */
@@ -259,15 +304,14 @@ footer {
   margin-bottom: 2%;
 }
 .footer-section {
-  margin-top: 2em;
-  width: 900px;
+  margin-top: 3em;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  border-bottom: 2px solid black;
+  border-bottom: 0.125em solid black;
 }
 .middle-section {
   width: 10em;
@@ -309,7 +353,7 @@ footer {
 }
 
 .under-footer {
-  width: 900px;
+  margin-top: 1em;
   margin-left: auto;
   margin-right: auto;
   display: flex;

@@ -1,3 +1,5 @@
+/*fetching data*/
+
 window.addEventListener("DOMContentLoaded", getData);
 
 const endpoint =
